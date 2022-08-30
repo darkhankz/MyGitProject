@@ -37,7 +37,6 @@ class ShopListAdapter : ListAdapter<ShopItem, ShopItemViewHolder>(ShopItemDiffCa
         holder.tvName.text = "${shopItem.name}"
         holder.tvCount.text = shopItem.count.toString()
     }
-
     override fun getItemViewType(position: Int): Int {
         val item = getItem(position)
         return if (item.enabled){
